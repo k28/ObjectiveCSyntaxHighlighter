@@ -47,7 +47,7 @@
 						'jmp_buf mbstate_t _off_t _onexit_t _PNH ptrdiff_t _purecall_handler ' +
 						'sig_atomic_t size_t _stat __stat64 _stati64 terminate_function ' +
 						'time_t __time64_t _timeb __timeb64 tm uintptr_t _utimbuf ' +
-						'va_list wchar_t wctrans_t wctype_t wint_t signed';
+						'va_list wchar_t wctrans_t wctype_t wint_t signed CGFloat';
 
 		var keywords =	'break case catch class copy const __finally __exception __try ' +
 						'const_cast continue private public protected __declspec ' +
@@ -79,11 +79,11 @@
 		this.regexList = [
 			{ regex: SyntaxHighlighter.regexLib.singleLineCComments,	css: 'comments' },			// one line comments
 			{ regex: SyntaxHighlighter.regexLib.multiLineCComments,		css: 'comments' },			// multiline comments
-			{ regex: SyntaxHighlighter.regexLib.doubleQuotedString,		css: 'string' },			// strings
-			{ regex: SyntaxHighlighter.regexLib.singleQuotedString,		css: 'string' },			// strings
+			{ regex: SyntaxHighlighter.regexLib.doubleQuotedString,		css: 'color3' },			// strings
+			{ regex: SyntaxHighlighter.regexLib.singleQuotedString,		css: 'color3' },			// strings
 			{ regex: /^ *#.*/gm,										css: 'variable' },
 			{ regex: /^#!.*$/gm,										css: 'preprocessor' },
-			{ regex: new RegExp(this.getKeywords(datatypes), 'gm'),		css: 'keyword' },
+			{ regex: new RegExp(this.getKeywords(datatypes), 'gm'),		css: 'functions' },
 			{ regex: new RegExp(this.getKeywords(functions), 'gm'),		css: 'functions' },
 			{ regex: new RegExp(this.getKeywords(keywords), 'gm'),		css: 'keyword' },
 			{ regex: new RegExp('\\bNS\\w+\\b', 'gm'),					css: 'constants' },
