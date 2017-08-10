@@ -85,7 +85,7 @@
 			{ regex: /^#!.*$/gm,										css: 'preprocessor' },
 			{ regex: new RegExp(this.getKeywords(datatypes), 'gm'),		css: 'functions' },
 			{ regex: new RegExp(this.getKeywords(functions), 'gm'),		css: 'functions' },
-			{ regex: new RegExp(this.getKeywords(keywords), 'gm'),		css: 'keyword' },
+			{ regex: new RegExp(this.getKeywords(keywords), 'gm'),		css: 'functions' },
 			{ regex: new RegExp('\\bNS\\w+\\b', 'gm'),					css: 'constants' },
 			{ regex: new RegExp('\\bUI\\w+\\b', 'gm'),					css: 'constants' },
 			{ regex: new RegExp('\\bIB\\w+\\b', 'gm'),					css: 'constants' },
