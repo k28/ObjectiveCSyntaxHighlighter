@@ -98,7 +98,7 @@
 	Brush.prototype	= new SyntaxHighlighter.Highlighter();
 	Brush.aliases	= ['swift', 'Swift'];
 
-	SyntaxHighlighter.brushes.Swift = Brush;
+	SyntaxHighlighter.brushes.swift = Brush;
 
 	// CommonJS
 	typeof(exports) != 'undefined' ? exports.Brush = Brush : null;
