@@ -58,7 +58,7 @@
 						'readonly readwrite register reinterpret_cast retain return SEL selectany self ' +
 						'setter sizeof static static_cast struct super switch template this ' +
 						'thread throw true false try typedef typeid typename union ' +
-						'using uuid virtual void volatile whcar_t while YES func repeat guard let var';
+						'using uuid virtual void volatile whcar_t while YES func repeat guard let var as';
 					
 		var functions =	'assert isalnum isalpha iscntrl isdigit isgraph islower isprint' +
 						'ispunct isspace isupper isxdigit tolower toupper errno localeconv ' +
